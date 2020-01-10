@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>{% block title %} {% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/ionicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Footer-Dark.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Navigation-with-Button.css' %}">
+    {% block css %} {% endblock css %}
+</head>
+
+<body class="text-center" style="background-image: url({% static 'img/bgwallpaper.jpg' %});">
+<nav class="navbar navbar-light navbar-expand-md navigation-clean-button"
+     style="background-color: rgb(2,14,27);color: rgb(186,48,48);">
+    <div class="container"><a class="navbar-brand" href="#">Technik Custom PC's</a>
+        <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"
+                style="background-color: #952a2a;"><span class="sr-only">Toggle navigation</span><span
+                class="navbar-toggler-icon"></span></button>
+        <div
+                class="collapse navbar-collapse" id="navcol-1">
+            <ul class="nav navbar-nav mr-auto">
+                <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'home' %}"
+                                                            style="color: white;">Home</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'builder' %}"
+                                                            style="color: white;">PC
+                    Builder</a>
+                </li>
+
+
+                <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color: white;">Featured</a>
+                </li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color: white;">Contact</a>
+                </li>
+            </ul>
+            <!--
+                    <span class="navbar-text actions"> <a class="login" href="#" style="color: lime;">Log In</a><a
+                            class="btn btn-light action-button" role="button" href="#"
+                            style="background-color: rgb(56,38,105);color: orange;">Sign Up</a></span></div> -->
+        </div>
+    </div>
+</nav>
+{% block content %} {% endblock content %}
+<div class="footer-dark">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Build a custom PC</a></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 item text">
+                    <h3>Technik Custom PC's</h3>
+                    <!--
+                    <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula
+                        rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel
+                        in justo.</p>-->
+                </div>
+                <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
+                        class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a
+                        href="#"><i class="icon ion-social-instagram"></i></a></div>
+            </div>
+            <p class="copyright">Technik Custom PC's © 2019</p>
+        </div>
+    </footer>
+</div>
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+</body>
+
