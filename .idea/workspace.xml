@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="53f3210f-1a95-488a-af57-5d98a3e4ae4d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PayTM/Checksum.py" beforeDir="false" afterPath="$PROJECT_DIR$/PayTM/Checksum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/Home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/Home/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/PCBuilder/builder.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/PCBuilder/builder.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechnikPCs/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/TechnikPCs/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +129,7 @@
       <workItem from="1579416038659" duration="326000" />
       <workItem from="1579873390927" duration="475000" />
       <workItem from="1579884986061" duration="28000" />
-      <workItem from="1580659192815" duration="1409000" />
+      <workItem from="1580659192815" duration="1529000" />
     </task>
     <servers />
   </component>
