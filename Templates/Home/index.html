@@ -2,25 +2,22 @@
 {% load static %}
 
 {% block content %}
-    <div class="container-fluid" style="width: 100%;height: 100%;margin: 0;">
+    <div class="container-fluid" style="width: 100%; height: 100%; margin: 0;">
         <div class="row text-center">
             <div class="col">
-                <p class="text-center"
-                   style="color: aqua;font-size: 66px;margin-top: 10%;font-family: monoton,fantasy;">BUILD
-                    YOUR
-                    DREAM RIG</p>
+                <p class="text-center fancy-text">BUILD YOUR DREAM RIG</p>
                 <div class="row">
                     <div class="col"><i class="icon ion-android-arrow-dropdown"
-                                        style="color: rgb(28,90,152);font-size: 173px;"></i></div>
+                                        style="color: rgb(28,90,152); font-size: 173px;"></i></div>
                 </div>
             </div>
         </div>
-        <div class="row" style="background-color: black;">
+        <div class="row body-black">
             <div class="col">
-                <p style="color: aqua;font-size: 66px;font-family: Monoton;">THE PROCESS</p>
-                <div class="card-group" style="padding: 2%;color: rgb(75,148,234);">
+                <p class="normal-heading-text">THE PROCESS</p>
+                <div class="card-group" style="padding: 2%; color: rgb(75,148,234);">
                     <div class="card">
-                        <div class="card-body" style="background-color: #000000;">
+                        <div class="card-body body-black">
                             <h4 class="card-title">01) Requirement</h4>
                             <p class="card-text">Choose the requirements for your PC:</p>
                             <p class="card-text">Gaming, Video Editing, Coding, productivity, commercial use; Technik
@@ -29,14 +26,14 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-body" style="background-color: #000000;">
+                        <div class="card-body body-black">
                             <h4 class="card-title">2) Budget</h4>
                             <p class="card-text">Enter your budget.</p>
                             <p class="card-text">From 40000-2 lakhs, Technik custom PCs has got everyones back.</p>
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-body" style="background-color: #000000;">
+                        <div class="card-body body-black">
                             <h4 class="card-title">03) Take Your Pick</h4>
                             <p class="card-text">Choose from the wide variety of options we give you.</p>
                         </div>
@@ -44,21 +41,21 @@
                 </div>
             </div>
         </div>
-        <div class="row" style="background-color: #000000;">
-            <div class="col" style="width: 100%;height: 100%;padding: 4%;">
+        <div class="row body-black">
+            <div class="col" style="width: 100%; height: 100%; padding: 4%;">
                 <button class="btn btn-primary btn-lg" type="button"
-                        style="font-size: 100%;width: 50%;padding: 2%; color: white;">
+                        style="font-size: 100%; width: 50%; padding: 2%; color: white;">
                     <a href="{% url 'builder' %}" style="color: white; text-decoration: none;">
-                        Start
-                        building your custom PC
+                        Start building your custom PC
                     </a>
                 </button>
             </div>
         </div>
-        <div class="row" style="background-color: #000000;">
+        <div class="row body-black">
             <div class="col">
-                <p style="color: aqua;font-size: 66px;font-family: Monoton;">THE ULTIMATE PC</p><img
-                    src="{% static 'img/ultimatepc.png' %}"></div>
+                <p class="normal-heading-text">THE ULTIMATE PC</p>
+                <img src="{% static 'img/ultimatepc.png' %}">
+            </div>
         </div>
     </div>
 {% endblock content %}

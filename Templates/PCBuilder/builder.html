@@ -5,31 +5,35 @@
     <div class="container" style="margin-top: 5%; margin-bottom: 5%;">
         <form action="{% url 'builder' %}" method="POST">
             {% csrf_token %}
-            <div class="row" style="background-color: #000000;color: rgb(114,185,255);">
+            <div class="row" id="builder">
                 <div class="col" style="padding: 2%;">
-                    <h1>1) Your Requirement</h1><select name="requirement">
-                    <optgroup label="More Options Coming Soon!">
-                        {% for category in categories %}
-                            <option value="{{ category.name }}">{{ category.name }}</option>
-                        {% endfor %}
-                    </optgroup>
-                </select></div>
+                    <h1>1) Your Requirement</h1>
+                    <select name="requirement">
+                        <optgroup label="More Options Coming Soon!">
+                            {% for category in categories %}
+                                <option value="{{ category.name }}">{{ category.name }}</option>
+                            {% endfor %}
+                        </optgroup>
+                    </select>
+                </div>
             </div>
-            <div class="row" style="background-color: #000000;color: rgb(114,185,255);">
+            <div class="row" id="builder">
                 <div class="col" style="padding: 5%;">
-                    <h1>2) Your Budget</h1><select name="budget">
-                    <optgroup label="Choose one">
-                        {% for price in prices %}
-                            <option value="{{ price.amount }}" selected="">{{ price.amount }}</option>
-                        {% endfor %}
-                    </optgroup>
-                </select><br>
+                    <h1>2) Your Budget</h1>
+                    <select name="budget">
+                        <optgroup label="Choose one">
+                            {% for price in prices %}
+                                <option value="{{ price.amount }}" selected="">{{ price.amount }}</option>
+                            {% endfor %}
+                        </optgroup>
+                    </select>
+                    <br>
                     <button type="submit" class="btn-primary" style="margin-top: 2%;">Submit</button>
                 </div>
             </div>
         </form>
         {% if request.method == "POST" %}
-            <div class="row" style="background-color: #000000;color: rgb(114,185,255); ">
+            <div class="row" id="builder">
                 <div class="col" style="padding: 2%;">
                     <center>
                         <h1>Recommended Configuration</h1>

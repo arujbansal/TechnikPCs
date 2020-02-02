@@ -1,0 +1,25 @@
+.body-black {
+    background-color: black;
+}
+
+#main-nav-text > li > a {
+    color: white;
+}
+
+.fancy-text {
+    color: aqua;
+    font-size: 66px;
+    margin-top: 10%;
+    font-family: monoton, fantasy;
+}
+
+.normal-heading-text {
+    color: aqua;
+    font-size: 66px;
+    font-family: monoton;
+}
+
+#builder {
+    background-color: black;
+    color: rgb(114, 185, 255);
+}
